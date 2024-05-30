@@ -681,7 +681,7 @@
 					</tr>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 50px;min-width: 50px">SVCODEC</td>
-						<td style="text-align: center;vertical-align:middle;width: 50px;min-width: 50px">1.2kbps</td>
+						<td style="text-align: center;vertical-align:middle;width: 50px;min-width: 50px">1kbps</td>
 						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/1 SVCODEC/1k/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
 						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/1 SVCODEC/1k/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
 						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/1 SVCODEC/1k/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
@@ -911,109 +911,183 @@
 </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-	<h2 style="text-align: center;">Comparision Results on LibriSpeech Benchmark</h2>
+	<h2 style="text-align: center;">Comparision Results on LibriSpeech</h2>
 		<div class="table-responsive pt-3" tabindex="0">
-			(P) denotes results from paper. (R) denotes reproduce.
+<!-- 			(P) denotes results from paper. (R) denotes reproduce. -->
 			<table class="table table-hover pt-2">
-				<thead>
+<!-- 				<thead>
 				  <tr>
-					<th style="text-align: center">-</th>
-					<th style="text-align: center">Sim-O&uarr;</th>
-					<th style="text-align: center">Sim-R&uarr;</th>
-					<th style="text-align: center">WER&darr;</th>
-					<th style="text-align: center">CMOS&uarr;</th>
-					<th style="text-align: center">SMOS&uarr;</th>
+					<th style="text-align: center">Model</th>
+					<th style="text-align: center">Bitrate</th>
+					<th style="text-align: center">DNSMOS</th>
+					<th style="text-align: center">ViSQOL&darr;</th>
+<!-- 					<th style="text-align: center">CMOS&uarr;</th> -->
+<!-- 					<th style="text-align: center">SMOS&uarr;</th> -->
 				  </tr>
-				</thead>
+				</thead> -->
 				<tbody>
 				  <tr style="border-bottom: 2px solid black;">
-					<td style="text-align: center;vertical-align:middle; width: 160px">Ground Truth</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.68</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">1.94</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">+0.08</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.85</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Model</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Bitrate</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">DNSMOS</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">ViSQOL&darr;</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">NaturalSpeech 2</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.55</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.62</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">1.94</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.18</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.65</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Speex</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">6kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.82</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.29</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">Voicebox</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.64</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.67</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">2.03</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.23</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.69</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Opus</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">6kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.10</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.30</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">Voicebox (R)</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.48</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.50</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">2.14</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.32</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.52</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Lyra</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">6kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.18</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.42</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">VALL-E (P)</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.58</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">5.90</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SVCODEC</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.30</b>b></td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.45</b>b></td>
+				  </tr>
+				<tr style="border-top: 2px solid black;">
+					<td style="text-align: center;vertical-align:middle; width: 160px">Opus</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.76</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.76</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">VALL-E (R)</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.47</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.51</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">6.11</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.60</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.46</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Speex</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.76</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.90</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">Mega-TTS 2</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.53</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">2.32</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.20</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.63</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SoundStream</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.01</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.92</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">UniAudio</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.57</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.68</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">2.49</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.25</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.71</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SVCODEC 2</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.12</b>b></td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.39</td>
 				  </tr>
 				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">StyleTTS 2</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.38</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">2.49</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.21</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.07</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Codec2</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.97</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.64</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">MELP</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.11</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>2.71</b></td>
 				  </tr>
-				  <tr>
-					<td style="text-align: center;vertical-align:middle; width: 160px">HierSpeech++</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">0.51</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">6.33</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">-0.41</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px">3.50</td>
-				  </tr>
-				  <tr style="border-top: 2px solid black;">
-					<td style="text-align: center;vertical-align:middle; width: 160px">NaturalSpeech 3</td>
-					<td style="text-align: center;vertical-align:middle; width: 160px"><b>0.67</b></td>
-					<td style="text-align: center;vertical-align:middle; width: 160px"><b>0.76</b></td>
-					<td style="text-align: center;vertical-align:middle; width: 160px"><b>1.81</b></td>
-					<td style="text-align: center;vertical-align:middle; width: 160px"><b>0.00</b></td>
-					<td style="text-align: center;vertical-align:middle; width: 160px"><b>4.01</b></td>
-				  </tr>
+				<tr style="border-top: 2px solid black;">
+					<td style="text-align: center;vertical-align:middle; width: 160px">SoundStream</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.08</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.28</td>
+				</tr>
+				 <tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SVCODEC</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.24</b>b></td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.09</b></td>
+				</tr>
+				<tr style="border-top: 2px solid black;">
+					<td style="text-align: center;vertical-align:middle; width: 160px">Opus</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.76</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.76</td>
+				</tr>
+				 <tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SoundStream</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.5kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.09</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.38</td>
+				</tr>
+				 <tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Codec2</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.08</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.84</td>
+				</tr>
+				 <tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">MELP</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.08</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.91</td>
+				</tr>
+				 <tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SVCODEC</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.5kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.26</b>b></td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.25</b>b></td>
+				</tr>
+				<tr style="border-top: 2px solid black;">
+					<td style="text-align: center;vertical-align:middle; width: 160px">Speex</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.76</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.90</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SoundStream</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.09</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.41</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Lyra</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.99</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.91</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Codec2</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.2kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.12</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.01</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SVCODEC</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.27</b>b></td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.35</b>b></td>
+				</tr>
+				<tr style="border-top: 2px solid black;">
+					<td style="text-align: center;vertical-align:middle; width: 160px">Opus</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.76</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">1.76</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">Speex</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.70</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.09</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SoundStream</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">3.10</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">2.82</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;vertical-align:middle; width: 160px">SVCODEC</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px">4kbps</td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.30</b>b></td>
+					<td style="text-align: center;vertical-align:middle; width: 160px"><b>3.45</b>b></td>
+				</tr>
 				</tbody>
 			  </table>
 		</div>
