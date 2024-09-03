@@ -15,6 +15,7 @@
    .image-container {
       display: flex;
       flex-wrap: wrap;
+	   justify-content: center;
     }
 
    .image-container img {
@@ -83,35 +84,39 @@
 	       <p style="text-align: center;">
 		SVCODEC Model Architecture. 
 		</p>
-		<p>
+		<p style="text-align: center;">
 		Part I:The generator (a) of the GAN network which consists of encoder (a1), vector quantizer (a2) and decoder (a3) and used to generate synthesized speech (y) which will be input to the discriminator (b) of the GAN network. Part II: The efficient discriminator (b), consisting of a multi-period discriminator (b1) and a multi-scale discriminator (b2).
 		</p>
 </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
-	<h2 id="model-overview" style="text-align: center;">Experimental Results</h2>
+	<h2 id="model-overview" style="text-align: center;">Subjective Experimental Results</h2>
 		<p style="text-align: center;">
-			<img src="pics/MUSHRA.png" width="1000" alt="">
+			<img src="pics/MUSHRA.png" width="1100" alt="">
 		</p>
-	<p style="text-align: center;">
+<!-- 	<p style="text-align: center;">
 		Subjective evaluation results.
-		</p>
-	<p>
+		</p> -->
+	<p style="text-align: center;">
 		 When the bit rate is the same or similar, SVCODEC holds an absolute advantage in MUSHRA score
 		</p>
 </div>
 
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-    <h2 id="model-overview" style="text-align: center;">Experimental Results</h2>
+    <h2 id="model-overview" style="text-align: center;">Objective Experimental Results</h2>
     <div class="image-container">
       <img src="pics/VISQOL.png" alt="">
       <img src="pics/PESQ.png" alt="">
       <img src="pics/DNSMOS.png" alt="">
       <img src="pics/STOI.png" alt="">
     </div>
-    <p style="text-align: center;">Objective evaluation results: ViSQOL(a) PESQ(b) DNSMOS(c) STOI(d).</p>
-    <p>In the same code rate range, SVCODEC has higher ViSQOL scores. Within a similar ViSQOL score range, SVCODEC also has a lower code rate. In other words, SVCODEC has absolute advantages in terms of bit rate and output voice quality.</p>
+<!--     <p style="text-align: center;">
+	    Objective evaluation results: ViSQOL(a) PESQ(b) DNSMOS(c) STOI(d).
+    </p> -->
+    <p style="text-align: center;">
+	    In the same code rate range, SVCODEC has higher ViSQOL scores. Within a similar ViSQOL score range, SVCODEC also has a lower code rate. In other words, SVCODEC has absolute advantages in terms of bit rate and output voice quality.
+    </p>
   </div>
 
 	
