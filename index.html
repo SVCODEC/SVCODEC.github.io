@@ -39,7 +39,7 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<div class="text-center">
 		<h1>SVCODEC:</h1>
-        <h3>A STREAMING VARIABLE NEURAL SPEECH CODEC</h3>
+        <h3><span>A STREAMING VARIABLE NEURAL SPEECH CODEC</span></h3>
 		<br> 
 		<p>  
 			Huaifeng Zhang <sup>1</sup>, 
@@ -65,7 +65,7 @@
 		  Speech coding is of crucial importance in saving precious transmission and storage resources and significantly enhancing communication efficacy. Currently, it is evolving towards ultra-low bit rates, which imposes heightened demands on coding efficiency, communication delay, and speech quality.
   This paper presents a variable bit rate streaming neural speech codec designed for ultra-low bit rate scenarios, based on the SoundStream network framework. The codec employs the vector quantised variational auto-encoder (VQ-VAE) algorithm to capture the temporal structure and spectral characteristics of audio datasets. This process generates a latent space codebook that is strongly correlated with the feature matrix of the target signal and facilitates the mapping of feature vectors to discrete feature vectors in the latent space for low bit rate speech compression.
   During the joint quantization training of multiple latent space codebooks using residual vector quantizers (RVQ), a balanced training strategy is introduced to ensure the balanced weight of the codebook, facilitating variable bit implementation in the inference process. Considering the harmonic characteristics of speech signals, a multi-period discriminator and a multi-scale discriminator are utilized to overcome the limitations of single-scale discriminators. The short-time fourier transform (STFT) spectrum, which has the ability to provide more accurate time-frequency resolution, is employed to reconstruct the reconstruction loss function. Additionally, a codebook loss function is introduced to improve the utilization rate of the codebook and accelerate the convergence speed of the model.
-  Objective and subjective experiments demonstrate that our proposed new neural speech codec outperforms traditional classical speech codecs and existing neural speech codecs in terms of reconstructed speech naturalness and quality while maintaining the low latency characteristic of neural speech codecs. With a multi-stimulus test with hidden reference and anchor (MUSHRA) score of 87, it is highly suitable for ultra-low bit rate speech compression applications such as satellite voice communication and narrowband instant messaging. The demo has been publicly released at \href{https://svcodec.github.io/}{https://svcodec.github.io/}.
+  Objective and subjective experiments demonstrate that our proposed new neural speech codec outperforms traditional classical speech codecs and existing neural speech codecs in terms of reconstructed speech naturalness and quality while maintaining the low latency characteristic of neural speech codecs. With a multi-stimulus test with hidden reference and anchor (MUSHRA) score of 87, it is highly suitable for ultra-low bit rate speech compression applications such as satellite voice communication and narrowband instant messaging. The demo has been publicly released at https://svcodec.github.io/.
 		
 		<br>
 <!-- 		<b>Update:</b> We release <b>the code and pre-trained checkpoint of FACodec </b> at <a href="https://huggingface.co/spaces/amphion/naturalspeech3_facodec">here</a> ! -->
@@ -326,51 +326,51 @@
 				<tbody>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">0.5kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/0k5/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">1kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">1.5kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/1k5/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">2kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">2.5kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/2k5/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">3kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/3k/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>
 <!-- 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">3.5kbps</td>
@@ -382,11 +382,11 @@
 					</tr> -->
 					<tr>
 						<td style="text-align: center;vertical-align:middle;width: 20px;min-width: 20px">4kbps</td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/1 61-70968-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/2 260-123286-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/3 672-122797-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/4 121-121726-0000.wav" >Your browser does not support the audio element.</audio></td>
-						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/5 237-126133-0003.wav" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/1 61-70968-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/2 260-123286-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/3 672-122797-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/4 121-121726-0000.flac" >Your browser does not support the audio element.</audio></td>
+						<td style="text-align: center;width: 200px"><audio controls="controls" style="width: 200px;"><source src="audio/11 DAC/4k/5 237-126133-0003.flac" >Your browser does not support the audio element.</audio></td>
 					</tr>				
 				</tbody>
 			</table>
