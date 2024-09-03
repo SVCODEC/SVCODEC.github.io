@@ -21,9 +21,12 @@
    .image-container img {
       width: 600px;
     }
-		      h2 span {
+h2 span {
       font-weight: bold;
       color: blue;
+    }
+		      p {
+      text-align: justify;
     }
   </style>
 </head>
@@ -61,12 +64,13 @@
 		</p>   -->
 	</div>
 	<p>
-        <b>Abstract.</b> 
+        <b>Abstract.</b>
+		<p>
 		  Speech coding is of crucial importance in saving precious transmission and storage resources and significantly enhancing communication efficacy. Currently, it is evolving towards ultra-low bit rates, which imposes heightened demands on coding efficiency, communication delay, and speech quality.
   This paper presents a variable bit rate streaming neural speech codec designed for ultra-low bit rate scenarios, based on the SoundStream network framework. The codec employs the vector quantised variational auto-encoder (VQ-VAE) algorithm to capture the temporal structure and spectral characteristics of audio datasets. This process generates a latent space codebook that is strongly correlated with the feature matrix of the target signal and facilitates the mapping of feature vectors to discrete feature vectors in the latent space for low bit rate speech compression.
   During the joint quantization training of multiple latent space codebooks using residual vector quantizers (RVQ), a balanced training strategy is introduced to ensure the balanced weight of the codebook, facilitating variable bit implementation in the inference process. Considering the harmonic characteristics of speech signals, a multi-period discriminator and a multi-scale discriminator are utilized to overcome the limitations of single-scale discriminators. The short-time fourier transform (STFT) spectrum, which has the ability to provide more accurate time-frequency resolution, is employed to reconstruct the reconstruction loss function. Additionally, a codebook loss function is introduced to improve the utilization rate of the codebook and accelerate the convergence speed of the model.
   Objective and subjective experiments demonstrate that our proposed new neural speech codec outperforms traditional classical speech codecs and existing neural speech codecs in terms of reconstructed speech naturalness and quality while maintaining the low latency characteristic of neural speech codecs. With a multi-stimulus test with hidden reference and anchor (MUSHRA) score of 87, it is highly suitable for ultra-low bit rate speech compression applications such as satellite voice communication and narrowband instant messaging. The demo has been publicly released at https://svcodec.github.io/.
-		
+		</p>
 		<br>
 <!-- 		<b>Update:</b> We release <b>the code and pre-trained checkpoint of FACodec </b> at <a href="https://huggingface.co/spaces/amphion/naturalspeech3_facodec">here</a> ! -->
 		<br>
